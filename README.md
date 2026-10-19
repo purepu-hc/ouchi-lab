@@ -7,7 +7,7 @@
 | アプリ | リポジトリ | 公開ページ |
 | --- | --- | --- |
 | 地図ラボ | purepu-hc/chizu-lab | https://chizu-lab.vercel.app/ |
-| 展開図ラボ | purepu-hc/tenkaizu-lab | じゅんびちゅう |
+| 展開図ラボ | purepu-hc/tenkaizu-lab | https://tenkaizu-lab.vercel.app/ |
 | 分数・小数ラボ | purepu-hc/bunsu-lab | https://bunsu-lab.vercel.app/ |
 | おんぷよみドリル | purepu-hc/onpudrill | https://onpudrill.vercel.app/ |
 
