@@ -15,6 +15,7 @@
   --geo:#2f8a5f; --geo-soft:#dcefe4;
   --math:#2f6bd8; --math-soft:#dce6fa;
   --music:#c0508a; --music-soft:#f6e0ec;
+  --code:#d9730d; --code-soft:#fde7cf;
   --ready:#8a9a95;
   --ui:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
   --pop:"Mochiy Pop One","Hiragino Maru Gothic ProN","Zen Maru Gothic",sans-serif;
@@ -22,11 +23,11 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#131c1a; --dot:#1e2a27; --card:#1a2523; --ink:#e4efeb; --muted:#9db1ab; --line:#33443f;
-  --geo:#5cc493; --geo-soft:#1f3a2e; --math:#7aa3f2; --math-soft:#21314f; --music:#e489b8; --music-soft:#3d2333;
+  --geo:#5cc493; --geo-soft:#1f3a2e; --math:#7aa3f2; --math-soft:#21314f; --music:#e489b8; --music-soft:#3d2333; --code:#f0a050; --code-soft:#3d2b1a;
   --ready:#6f807b; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#131c1a; --dot:#1e2a27; --card:#1a2523; --ink:#e4efeb; --muted:#9db1ab; --line:#33443f;
-  --geo:#5cc493; --geo-soft:#1f3a2e; --math:#7aa3f2; --math-soft:#21314f; --music:#e489b8; --music-soft:#3d2333;
+  --geo:#5cc493; --geo-soft:#1f3a2e; --math:#7aa3f2; --math-soft:#21314f; --music:#e489b8; --music-soft:#3d2333; --code:#f0a050; --code-soft:#3d2b1a;
   --ready:#6f807b; color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -68,6 +69,7 @@ a.tile:focus-visible{outline:3px solid var(--c);outline-offset:3px}
 .geo{--c:var(--geo);--c-soft:var(--geo-soft)}
 .math{--c:var(--math);--c-soft:var(--math-soft)}
 .music{--c:var(--music);--c-soft:var(--music-soft)}
+.code{--c:var(--code);--c-soft:var(--code-soft)}
 .tile.soon{border-style:dashed;cursor:default}
 .tile.soon .icon{filter:grayscale(.6);opacity:.7}
 
@@ -82,7 +84,7 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px dashed var(--line);pad
     <p class="lead">うちでつくった、まなびの道具。さわって、うごかして、たしかめよう。</p>
   </header>
 
-  <!-- アプリを足すときは <li> を1つコピーして、名前・説明・URL・色（geo / math / music）を書きかえる。
+  <!-- アプリを足すときは <li> を1つコピーして、名前・説明・URL・色（geo / math / music / code）を書きかえる。
        まだ公開していないものは <a> を <div> にして class に soon を足し、chip を「じゅんびちゅう」にする -->
   <ul class="shelf">
     <li class="geo">
@@ -122,6 +124,16 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px dashed var(--line);pad
           <span class="chips"><span class="chip">おんがく</span></span>
           <span class="name">おんぷよみドリル</span>
           <span class="desc">五線譜の音符を読んで、ピアノでひく練習</span>
+        </span>
+      </a>
+    </li>
+    <li class="code">
+      <a class="tile" href="https://code-lab.vercel.app/">
+        <span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M6 10h12l2 3h8l2-3h12v10H6z"/><path d="M6 20h7v18H6z"/><path d="M6 38h20l2 3h4l2-3h8"/><path d="M13 25h10l2 3h8l2-3h7v8H13z" fill="currentColor"/></svg></span>
+        <span class="body">
+          <span class="chips"><span class="chip">プログラミング</span></span>
+          <span class="name">ピコのコード島</span>
+          <span class="desc">ブロックをならべてロボットを動かす。Scratchのまえのれんしゅう</span>
         </span>
       </a>
     </li>
